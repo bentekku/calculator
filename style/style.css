@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600&display=swap');
 
 :root{
+    /* bg color */
     --dark-color: #161a1e;
 
-
+    /*  for accent and text color */
     --text-color: #ff8100; 
     --light-color: #F9F9F9;
 }
@@ -39,7 +40,6 @@ main
 .container {
     max-height: 550px;
     max-width: 350px;
-    /* background-color: aliceblue; */
 
     border: .15rem dashed var(--light-color);
     border-radius: 18px;
@@ -160,7 +160,7 @@ button:hover {
     box-shadow: 5px 7px 5px -2px rgba(0,0,0,0.43);
 }
 
-#btn-all-clear, #btn-delete, #btn-percentage, #btn-divide, #btn-multiply, #btn-subtract, #btn-plus, #btn-equals{
+#btn-all-clear, #btn-delete, #btn-equals, .operator {
     color: var(--light-color);
     background-color: var(--text-color);
 }
