@@ -37,8 +37,8 @@ main
 }
 
 .container {
-    min-height: 550px;
-    min-width: 350px;
+    max-height: 550px;
+    max-width: 350px;
     /* background-color: aliceblue; */
 
     border: .15rem dashed var(--light-color);
@@ -57,7 +57,7 @@ main
 
 .display {
     /* background-color: red; */
-    height: 140px;
+    max-height: 140px;
     padding: 14px;
 }
 
@@ -77,22 +77,23 @@ main
     border-radius: 12px;
 }
 
-#dis-input, #dis-ans {
+#dis-equation, #dis-ans {
     text-align: end;
     margin-right: .2rem;
 }
 
-#dis-input::selection, #dis-ans::selection {
+#dis-equation::selection, #dis-ans::selection {
     color: var(--light-color);
     background: var(--text-color);
 }
-#dis-input::-moz-selection, #dis-ans::-moz-selection {
+#dis-equation::-moz-selection, #dis-ans::-moz-selection {
     color: var(--light-color);
     background: var(--text-color);
 }
 
-#dis-input {
+#dis-equation {
     color: var(--text-color);
+    font-size: 1.2rem;
     font-weight: 300;
 }
 
@@ -115,6 +116,9 @@ svg {
     margin-top: 2px;
 
     fill: var(--light-color);
+}
+svg::selection{
+    color: transparent;
 }
 
 .buttons {
@@ -159,6 +163,22 @@ button:hover {
 #btn-all-clear, #btn-delete, #btn-percentage, #btn-divide, #btn-multiply, #btn-subtract, #btn-plus, #btn-equals{
     color: var(--light-color);
     background-color: var(--text-color);
+}
+
+#btn-delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-delete span {
+    /* margin-top: -22px; */
+
+    height: 1px;
+    margin-top: -91px;
+
+    font-size: 2.6rem;
+    font-weight: 700;
 }
 
 #btn-equals{
