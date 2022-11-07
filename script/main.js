@@ -40,8 +40,8 @@ function eraseAns() {
   if (ANS.textContent.length > 0) {
     ANS.textContent = ANS.textContent.slice(0, [ANS.textContent.length - 1]);
     currentValue = ANS.textContent;
-    console.log(ANS.textContent);
-    console.log(ANS.textContent.length);
+    // console.log(ANS.textContent);
+    // console.log(ANS.textContent.length);
 
     // previousValue = currentValue;
   }
